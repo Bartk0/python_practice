@@ -7,7 +7,7 @@ def string_splitter(string_to_split, split_symbol):
     :param split_symbol: Separator to separate by
     :return: List of separated substrings
     """
-    return  # Add code here to split 'string_to_split' with 'split_symbol'
+    return string_to_split.split(split_symbol)  # Add code here to split 'string_to_split' with 'split_symbol'
 
 
 if __name__ == '__main__':
@@ -24,4 +24,5 @@ if __name__ == '__main__':
     separator_symbol = args.separator
 
     # Call function "string_splitter" with parameters to print result
-    print()
+    OutString = string_splitter(income_string, separator_symbol)
+    print(OutString);
