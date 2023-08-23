@@ -14,10 +14,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Split "String" by "Separator"')
 
     # Add required info form task here
-    parser.add_argument('-string', action='store', required=True)
+    parser.add_argument('-string', action='store', required=True, help='Input argument that will be processed by the program as the string to be seperated')
 
     # Add required info form task here
-    parser.add_argument('-separator', action='store', required=True)
+    parser.add_argument('-separator', action='store', required=True, help='Input argument that will be processed by the program as the symbol that will be used as the seperator to be seperated')
 
     args = parser.parse_args()
     income_string = args.string
